@@ -5,7 +5,11 @@ module.exports = {
   // 自定义规则
   rules: {
     // @see https://commitlint.js.org/#/reference-rules
-
+    'body-leading-blank': [2, 'always'],
+    'footer-leading-blank': [1, 'always'],
+    'header-max-length': [2, 'always', 108],
+    'subject-empty': [2, 'never'],
+    'type-empty': [2, 'never'],
     // 提交类型枚举，git提交type必须是以下类型
     'type-enum': [
       2,
